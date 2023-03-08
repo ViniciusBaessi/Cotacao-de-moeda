@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(236, 236, 235);
+    color: white;
+    
+}
+
+header {
+    background-color: white;
+    width: 80%;
+    float: right;
+    box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.089);
+}
+
+
+header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 26px;
+    text-align: center;
+    color: rgb(16, 121, 226);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color:rgb(16, 121, 226);
+    height: 100vh;
+    width: 20%;
+    
+}
+
+.foto {
+    width: 100px;
+}
+.lista {
+    list-style: none;
+}
+
+
+.container_perfil {
+    border-bottom: 3px solid white;
+    width: 40%;
+    text-align: center;
+
+    padding-bottom: 28px;
+
+    margin-top: 10em;
+    margin-bottom: 15px;
+
+
+}
+
+
+
+.container_perfil h1 {
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    padding-bottom: 15px;
+    
+}
+
+.container_perfil img {
+    width: 130px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.089);
+}
+
+.container_perfil p {
+   margin-top: 10px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+
+
+
+.container_lista {
+    border: 1px solid black;
+
+    padding: 10px;
+}
+
