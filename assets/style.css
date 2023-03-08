@@ -18,6 +18,7 @@ header {
     width: 80%;
     float: right;
     box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.089);
+    margin-bottom: 50px;
 }
 
 
@@ -49,16 +50,16 @@ article {
 
 
 .container_perfil {
-    border-bottom: 3px solid white;
-    width: 40%;
+    
+    width: 50%;
     text-align: center;
 
     padding-bottom: 28px;
-
     margin-top: 10em;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
 
-
+    border-bottom: 3px solid white;
+    
 }
 
 
@@ -71,8 +72,14 @@ article {
     
 }
 
+
+.container_perfil i {
+
+    padding-right: 5px;
+}
+
 .container_perfil img {
-    width: 130px;
+    width: 100px;
     border-radius: 70px;
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.089);
 }
@@ -86,10 +93,79 @@ article {
 
 
 
-
 .container_lista {
-    border: 1px solid black;
-
+    
+    font-size: 19px;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.icon_lista {
+    width: 26px;
+    text-align: center;
+    padding-right:20px;
+}
+
+.icon_lista i {
+    
+    padding-bottom:23px;
+}
+
+
+.nome_lista p {
+    padding-bottom:17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nome_lista :first-child, .icon_lista :first-child {
+    color: rgb(34, 34, 34);
+  }
+
+  .nome_lista :hover  {
+    cursor: pointer;
+    text-decoration: underline ;
+  }
+
+
+  .grafico {
+    
+
+    background-color: white;
+
+    width: 50%;
+    float: right;
+    color: black;
+    margin-right: 13%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.grafico h1 {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+
+.grafico i {
+    
+    background-color: #05c981;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20px;
+    text-align: center;
+    margin-right: 15px;
+    
+}
+
+#graficoDolar {
+    
+    padding: 0px;
+    margin-bottom: 40px;
+    
 }
 

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Estilo CSS -->
     <link rel="stylesheet" href="/assets/style.css">
 
 
@@ -19,6 +21,18 @@
             <h1>Olá, Vinicius! Segue os detalhes da cotação atual:</h1>
         </header>
 
+
+        <section class="grafico">
+            <h1><i class="fa fa-dollar"></i> Variação da moeda desde o login</h1>
+
+            <canvas id="graficoDolar"></canvas>
+
+            <h1>Valores da moeda</h1>
+        </section>
+        
+
+
+
         <article>
 
             <section class="container_perfil">
@@ -29,15 +43,30 @@
 
 
             <section class="container_lista">
-                <ul class="lista">
-                    <li>Dashboard</li>
-                    <li>Investimentos</li>
-                    <li>Minha conta</li>
-                    <li>Dúvidas frequentes</li>
-                </ul>
+
+                <div class="icon_lista">
+                    <i class="fa fa-pie-chart"></i> 
+                    <i class="fa fa-money"></i> 
+                    <i class="fa fa-user"></i>
+                    <i class="fa fa-question-circle"></i>
+                </div>
+
+                <div class="nome_lista">
+                    <p>Dashboard</p>
+                    <p>Investimentos</p>
+                    <p>Minha conta</p>
+                    <p>Dúvidas frequentes</p>
+                </div>
+
             </section>
+
 
     </article>
 
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/script.js" type="module"></script>
 </body>
 </html>
