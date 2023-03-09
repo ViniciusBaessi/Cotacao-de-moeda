@@ -16,6 +16,11 @@ const graficoParaDolar = new Chart(graficoDolar, {
     },
   });
 
+
+
+   // Os dados são atualizados de forma constante para que o usuário veja o valor mais recente. O comando (setInterval) chama a função (conectaAPI) a cada 5 segundos.
+   setInterval(() =>  conectaAPI(), 5000)
+
   async function conectaAPI() {
 
     //O (fatch) faz a requisição de dados para a API e o comando (await) espera até que a resposta chegue.
@@ -29,15 +34,19 @@ const graficoParaDolar = new Chart(graficoDolar, {
 
     //Armazena o dado da API na variável valor
     let valor = conectaTraduzido.USDBRL.ask
+
+   
     
     //Chama a função para adicionar os dados
     adicionarDados(graficoParaDolar, tempo, valor)
+
+
+    imprimeCotacao("dólar", valor)
   }
 
 
-
-  // Os dados são atualizados de forma constante para que o usuário veja o valor mais recente. O comando (setInterval) chama a função (conectaAPI) a cada 5 segundos.
-  setInterval(() =>  conectaAPI(), 5000)
+ 
+ 
 
 
 
@@ -84,10 +93,14 @@ const graficoParaDolar = new Chart(graficoDolar, {
     grafico.update();
 }
 
+
+
+
+
+
 function imprimeCotacao (nome, valor) {
 
   //Limpando os dados da lista
-
 
   lista.innerHTML = ""
 
@@ -97,10 +110,26 @@ function imprimeCotacao (nome, valor) {
     //Variável (listaItem) cria um elemento (li) dentro do HTML
     const listaItem = document.createElement('li')
 
+
+    valor = (valor*multiplicador).toFixed(2)
+
+
+    if (valor.length == 4) {
+      let string = valor.toString(); // converte a variável numérica para uma string
+      valor = string.slice(0, 1) + ',' + string.slice(2); // insere o ponto após o primeiro caractere
+    }  
+    
+
+   
+
+
+
     //O (li) recebe os valores
-    listaItem.innerHTML = `${multiplicador} ${nome}: R$${(valor*multiplicador.toFixed(2))}`
+    listaItem.innerHTML = `${multiplicador} ${nome}: R$${valor}`
 
     //A lista do HTML recebe o li junto aos valores, assim realizando o print na tela
     lista.appendChild(listaItem)
+
+    
   }
 }
