@@ -10,4 +10,4 @@
 
 Segue abaixo a pré-visualização:
 
-<img src="https://github.com/ViniciusBaessi/Cotacao-de-moeda/blob/main/assets/Preview.png" alt="" style="width:450px;">
+<img src="https://github.com/ViniciusBaessi/Cotacao-de-moeda/blob/main/assets/Preview.png" alt="" style="width:1150px;">
