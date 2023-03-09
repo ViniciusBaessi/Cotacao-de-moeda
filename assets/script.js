@@ -11,7 +11,7 @@ const graficoParaDolar = new Chart(graficoDolar, {
       datasets: [{
         label: 'Dólar',
         data: [],
-        borderWidth: 1
+        borderWidth: 3
       }]
     },
   });
@@ -97,6 +97,9 @@ const graficoParaDolar = new Chart(graficoDolar, {
 
 
 
+   
+
+
 
 function imprimeCotacao (nome, valor) {
 
@@ -110,22 +113,34 @@ function imprimeCotacao (nome, valor) {
     //Variável (listaItem) cria um elemento (li) dentro do HTML
     const listaItem = document.createElement('li')
 
-
-    valor = (valor*multiplicador).toFixed(2)
-
-
-    if (valor.length == 4) {
-      let string = valor.toString(); // converte a variável numérica para uma string
-      valor = string.slice(0, 1) + ',' + string.slice(2); // insere o ponto após o primeiro caractere
-    }  
     
 
+    valor = (valor*multiplicador).toFixed(2)
+    
    
 
+    
+    if (valor.length == 4) {
+      let string = valor.toString(); // converte a variável numérica para uma string
+      let valor2 = string.slice(0, 1) + ',' + string.slice(2); // insere o ponto após o primeiro caractere
+      //O (li) recebe os valores
+      listaItem.innerHTML = `${multiplicador} ${nome}: R$${valor2}`
+    }  
 
+    if (valor.length == 5) {
+      let string = valor.toString(); // converte a variável numérica para uma string
+      let valor3 = string.slice(0, 2) + ',' + string.slice(3); // insere o ponto após o primeiro caractere
+      //O (li) recebe os valores
+      listaItem.innerHTML = `${multiplicador} ${nome}: R$${valor3}`
+    }  
 
-    //O (li) recebe os valores
-    listaItem.innerHTML = `${multiplicador} ${nome}: R$${valor}`
+    if (valor.length == 7) {
+      let string = valor.toString(); // converte a variável numérica para uma string
+      let valor4 = string.slice(0, 3) + ',' + string.slice(5); // insere o ponto após o primeiro caractere
+      //O (li) recebe os valores
+      listaItem.innerHTML = `${multiplicador} ${nome}: R$${valor4}`
+    }  
+    
 
     //A lista do HTML recebe o li junto aos valores, assim realizando o print na tela
     lista.appendChild(listaItem)
