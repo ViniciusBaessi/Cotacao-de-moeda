@@ -1,6 +1,6 @@
 # Cotação de moedas em tempo real (HTML + CSS + Javascript) 📈
 
-⚡ Criação de uma calculadora web simples, para cálculo das quatro operações básicas.
+⚡ Criação de uma página que recebe dados da <a href="[https://www.youtube.com/watch?v=YPYwND5WGxw&list=LL&index=9](https://docs.awesomeapi.com.br/api-de-moedas)">awesome API</a>, ao qual se trata de uma API que é atualizada a cada 30 segundos. Os dados são apresentados por meio de um gráfico que dispõe a variação do valor da moeda em tempo real, sendo possível visualizar a sua transição.
 
 📲 Acesse em: https://calculadora-web-beta.vercel.app/
 
