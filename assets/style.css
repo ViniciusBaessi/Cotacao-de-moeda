@@ -5,6 +5,7 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 body {
@@ -30,15 +31,21 @@ header h1{
     color: rgb(16, 121, 226);
 }
 
+
+strong {
+    color:#017a4e;
+}
+
 article {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     
     background-color:rgb(16, 121, 226);
-    height: 100vh;
-    width: 20%;
     
+    width: 20%;
+    height: 157vh;
 }
 
 .foto {
@@ -140,13 +147,15 @@ article {
     margin-right: 13%;
     padding: 30px;
     border-radius: 20px;
+
+    margin-bottom: 30px;
 }
 
 .grafico h1 {
     
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 
@@ -160,7 +169,11 @@ article {
     text-align: center;
     margin-right: 15px;
     
+    
 }
+
+
+
 
 #graficoDolar {
     
@@ -169,4 +182,35 @@ article {
     width: 50px;
 }
 
+.dolar {
+    list-style:inside;
+}
 
+.dolar li {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#grafico2 h1 i{
+    background-color: #e9cd18;
+
+}
+
+div > h1 {
+    
+
+    width: 80%;
+    float: right;
+    color: black;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    
+    margin-top: 40px;
+    text-align: center;
+
+    color: rgb(18, 95, 172);
+    
+}
