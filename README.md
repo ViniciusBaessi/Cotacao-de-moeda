@@ -1,4 +1,4 @@
-# Cotação de moedas em tempo real via API (HTML + CSS + Javascript) 📈
+# Cotação de moedas em tempo real (HTML + CSS + Javascript) 📈
 
 ⚡ Criação de uma calculadora web simples, para cálculo das quatro operações básicas.
 
