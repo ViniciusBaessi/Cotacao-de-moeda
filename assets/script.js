@@ -1,5 +1,9 @@
 const graficoDolar = document.getElementById('graficoDolar')
 
+const lista = document.querySelector('[data-lista]')
+
+
+
 const graficoParaDolar = new Chart(graficoDolar, {
     type: 'line',
     data: {
@@ -78,4 +82,25 @@ const graficoParaDolar = new Chart(graficoDolar, {
 
     //Comando para atualizar o gráfico para imprimir os novos dados
     grafico.update();
+}
+
+function imprimeCotacao (nome, valor) {
+
+  //Limpando os dados da lista
+
+
+  lista.innerHTML = ""
+
+  //Multiplicando a variável (multiplicador = 1) por 10 até que ele seja igual a 1000
+  for (let multiplicador = 1; multiplicador <= 1000; multiplicador *= 10){
+
+    //Variável (listaItem) cria um elemento (li) dentro do HTML
+    const listaItem = document.createElement('li')
+
+    //O (li) recebe os valores
+    listaItem.innerHTML = `${multiplicador} ${nome}: R$${(valor*multiplicador.toFixed(2))}`
+
+    //A lista do HTML recebe o li junto aos valores, assim realizando o print na tela
+    lista.appendChild(listaItem)
+  }
 }
