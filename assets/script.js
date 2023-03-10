@@ -50,7 +50,7 @@ const graficoParaDolar = new Chart(graficoDolar, {
     valor = parseFloat(conectaTraduzido.USDBRL.ask);
     let titulo = Number(valor)
     titulo = valor.toFixed(2)
-    res.innerHTML = ` <i class="fa fa-dollar"></i> Variação do dólar desde o login | <strong> R$ ${titulo} </strong>`
+    res.innerHTML = ` <i class="fa fa-dollar"></i> Variação do dólar desde o login | <strong> R$ ${titulo} </strong> real brasileiro`
 
     imprimeCotacao("dólar","dólares", valor)
   }
