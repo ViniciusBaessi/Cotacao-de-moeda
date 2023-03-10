@@ -190,7 +190,7 @@ conectaAPI2()
     valor2 = parseFloat(conectaTraduzido2.EURBRL.ask);
     let titulo2 = Number(valor2)
     titulo2 = valor2.toFixed(2)
-    res2.innerHTML = ` <i class="fa fa-euro"></i> Variação do euro desde o login | <strong> R$ ${titulo2} </strong>`
+    res2.innerHTML = ` <i class="fa fa-euro"></i> Variação do euro desde o login | <strong> R$ ${titulo2} </strong> real brasileiro`
 
     imprimeCotacao2("Euro","Euros", valor2)
   }
