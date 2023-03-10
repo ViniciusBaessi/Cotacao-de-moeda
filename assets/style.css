@@ -6,12 +6,13 @@
     padding: 0;
     margin: 0;
     
+    
 }
 
 body {
     background-color: rgb(236, 236, 235);
     color: white;
-    
+    height: 100vh;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
     float: right;
     box-shadow: 1px 1px 4px 3px rgba(0, 0, 0, 0.089);
     margin-bottom: 50px;
+    
 }
 
 
@@ -45,7 +47,8 @@ article {
     background-color:rgb(16, 121, 226);
     
     width: 20%;
-    height: 157vh;
+    height: 180vh;
+   
 }
 
 .foto {
