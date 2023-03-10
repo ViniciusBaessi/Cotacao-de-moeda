@@ -198,6 +198,11 @@ article {
 
 }
 
+
+#graficoEuro {
+    margin-bottom: 40px;
+}
+
 div > h1 {
     
 
@@ -208,7 +213,7 @@ div > h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     
-    margin-top: 40px;
+    margin: 40px 0px;
     text-align: center;
 
     color: rgb(18, 95, 172);
