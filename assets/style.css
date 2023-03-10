@@ -222,3 +222,51 @@ div > h1 {
     color: rgb(18, 95, 172);
     
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+
+    article {
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+
+    .grafico {
+        width: 200px;
+        margin-right: 9.5%;
+    }
+
+    .grafico h1 {
+    font-size: 13px;
+    }
+
+    .grafico i {
+        font-size: 13px;
+        padding: 6px;
+        border-radius: 6px;
+        margin-right: 5px;
+    }
+
+    .dolar li {
+        padding: 6px;
+        font-size: 13px;
+        
+    }
+
+    div > h1 {
+    
+
+        width: 100%;
+        
+    }
+}
