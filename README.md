@@ -2,7 +2,7 @@
 
 ⚡ Criação de uma página que recebe dados da <a href="https://docs.awesomeapi.com.br/api-de-moedas">awesome API</a>, ao qual se trata de uma API que é atualizada a cada 30 segundos. Os dados são apresentados por meio de um gráfico que dispõe a variação do valor da moeda em tempo real, sendo possível visualizar a sua transição.
 
-📲 Acesse em: https://calculadora-web-beta.vercel.app/
+📲 Acesse em: https://cotacao-de-moeda.vercel.app/
 
 📄 Feito apenas com HTML, CSS e Javascript
 
